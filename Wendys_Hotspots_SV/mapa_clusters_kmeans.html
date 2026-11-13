@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ee96305c23fc35bf4fa88f58d12ba046 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ee96305c23fc35bf4fa88f58d12ba046" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ee96305c23fc35bf4fa88f58d12ba046 = L.map(
+                "map_ee96305c23fc35bf4fa88f58d12ba046",
+                {
+                    center: [13.698189663636363, -89.19992727272728],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c047011b66b7ccd6d4946f87e0a8b355 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri World Street Map",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c047011b66b7ccd6d4946f87e0a8b355.addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var marker_87ca436c6def0d543c995eabfa4a4f73 = L.marker(
+                [13.6890273, -89.2403041],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_0587e390c1615270968a5c621178923d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68be3039a7b8ded7fdd3a34b7601be6d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3547310bdbdf59d0e2e64c759d46dd82 = $(`<div id="html_3547310bdbdf59d0e2e64c759d46dd82" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 0<br>Coords: 13.68903, -89.24030</div>`)[0];
+                popup_68be3039a7b8ded7fdd3a34b7601be6d.setContent(html_3547310bdbdf59d0e2e64c759d46dd82);
+            
+        
+
+        marker_87ca436c6def0d543c995eabfa4a4f73.bindPopup(popup_68be3039a7b8ded7fdd3a34b7601be6d)
+        ;
+
+        
+    
+    
+            marker_87ca436c6def0d543c995eabfa4a4f73.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_87ca436c6def0d543c995eabfa4a4f73.setIcon(icon_0587e390c1615270968a5c621178923d);
+            
+    
+            var marker_cb0a29e359b99a89e41fafdba7f91b6f = L.marker(
+                [13.6979442, -89.1510351],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_50f43cdd7adf07b7e4e37dcc27bb7df4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ec6500f0b6c9ecd694351b76a10d9a6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bcdc6afdda9cb56f7528b5168a44ceb0 = $(`<div id="html_bcdc6afdda9cb56f7528b5168a44ceb0" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 1<br>Coords: 13.69794, -89.15104</div>`)[0];
+                popup_2ec6500f0b6c9ecd694351b76a10d9a6.setContent(html_bcdc6afdda9cb56f7528b5168a44ceb0);
+            
+        
+
+        marker_cb0a29e359b99a89e41fafdba7f91b6f.bindPopup(popup_2ec6500f0b6c9ecd694351b76a10d9a6)
+        ;
+
+        
+    
+    
+            marker_cb0a29e359b99a89e41fafdba7f91b6f.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb0a29e359b99a89e41fafdba7f91b6f.setIcon(icon_50f43cdd7adf07b7e4e37dcc27bb7df4);
+            
+    
+            var marker_40f173cc56abbed6dbf83e307b8cc957 = L.marker(
+                [13.6644246, -89.1844223],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_d51a35f4978f1f63ab7d48842f5dc4cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc9689b517772b0bbd171743aa01b00c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9bbe367e508934d84f9a0a64bfe3e661 = $(`<div id="html_9bbe367e508934d84f9a0a64bfe3e661" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 2<br>Coords: 13.66442, -89.18442</div>`)[0];
+                popup_dc9689b517772b0bbd171743aa01b00c.setContent(html_9bbe367e508934d84f9a0a64bfe3e661);
+            
+        
+
+        marker_40f173cc56abbed6dbf83e307b8cc957.bindPopup(popup_dc9689b517772b0bbd171743aa01b00c)
+        ;
+
+        
+    
+    
+            marker_40f173cc56abbed6dbf83e307b8cc957.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40f173cc56abbed6dbf83e307b8cc957.setIcon(icon_d51a35f4978f1f63ab7d48842f5dc4cb);
+            
+    
+            var marker_b87ac06702fc3bf4bd4d55e163d04ca2 = L.marker(
+                [13.7016555, -89.2313751],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_1704dd43796f7115baf23a8369c0b65f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_887aec54af91fd97d888899ce1be8ffe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_35ee901ae4aab1f933f07ea2489748ec = $(`<div id="html_35ee901ae4aab1f933f07ea2489748ec" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 0<br>Coords: 13.70166, -89.23138</div>`)[0];
+                popup_887aec54af91fd97d888899ce1be8ffe.setContent(html_35ee901ae4aab1f933f07ea2489748ec);
+            
+        
+
+        marker_b87ac06702fc3bf4bd4d55e163d04ca2.bindPopup(popup_887aec54af91fd97d888899ce1be8ffe)
+        ;
+
+        
+    
+    
+            marker_b87ac06702fc3bf4bd4d55e163d04ca2.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b87ac06702fc3bf4bd4d55e163d04ca2.setIcon(icon_1704dd43796f7115baf23a8369c0b65f);
+            
+    
+            var marker_0a8edd4eedd775f2ad7b6f2b8af6be2b = L.marker(
+                [13.6835158, -89.2304659],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_5d4548794b4fcb080adc40c56f7a5380 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e9a5293c5a5dcd4790162c643370c6b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71054334e8257fc62b856f71d244a4cf = $(`<div id="html_71054334e8257fc62b856f71d244a4cf" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 0<br>Coords: 13.68352, -89.23047</div>`)[0];
+                popup_2e9a5293c5a5dcd4790162c643370c6b.setContent(html_71054334e8257fc62b856f71d244a4cf);
+            
+        
+
+        marker_0a8edd4eedd775f2ad7b6f2b8af6be2b.bindPopup(popup_2e9a5293c5a5dcd4790162c643370c6b)
+        ;
+
+        
+    
+    
+            marker_0a8edd4eedd775f2ad7b6f2b8af6be2b.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a8edd4eedd775f2ad7b6f2b8af6be2b.setIcon(icon_5d4548794b4fcb080adc40c56f7a5380);
+            
+    
+            var marker_c90d2e69d9c0b048300370713173f6f4 = L.marker(
+                [13.700693, -89.2214252],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_f164397ad0869e408ba0176b89dfad87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_527268c52436aa247e1e018c4db42bd9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_73646d95c7209987e165a29eb1f0798b = $(`<div id="html_73646d95c7209987e165a29eb1f0798b" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 0<br>Coords: 13.70069, -89.22143</div>`)[0];
+                popup_527268c52436aa247e1e018c4db42bd9.setContent(html_73646d95c7209987e165a29eb1f0798b);
+            
+        
+
+        marker_c90d2e69d9c0b048300370713173f6f4.bindPopup(popup_527268c52436aa247e1e018c4db42bd9)
+        ;
+
+        
+    
+    
+            marker_c90d2e69d9c0b048300370713173f6f4.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c90d2e69d9c0b048300370713173f6f4.setIcon(icon_f164397ad0869e408ba0176b89dfad87);
+            
+    
+            var marker_419d8713d9476148c96944ad44c33c97 = L.marker(
+                [13.7056518, -89.248891],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_38f7328f90fc644d23db5cbc74527718 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33e4bf3e8a968f51a81c745efac750ba = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e06e7f68b5066170e510ee2b1413ae08 = $(`<div id="html_e06e7f68b5066170e510ee2b1413ae08" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 0<br>Coords: 13.70565, -89.24889</div>`)[0];
+                popup_33e4bf3e8a968f51a81c745efac750ba.setContent(html_e06e7f68b5066170e510ee2b1413ae08);
+            
+        
+
+        marker_419d8713d9476148c96944ad44c33c97.bindPopup(popup_33e4bf3e8a968f51a81c745efac750ba)
+        ;
+
+        
+    
+    
+            marker_419d8713d9476148c96944ad44c33c97.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_419d8713d9476148c96944ad44c33c97.setIcon(icon_38f7328f90fc644d23db5cbc74527718);
+            
+    
+            var marker_599f9774cfb69bd673fbba7ca5a4d575 = L.marker(
+                [13.7093305, -89.2090946],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_a68d0f6a72929f30c244d433d8b6a012 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f69fc35a29c878a086f959e1a997734a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b0fed50505b93dcf9e9ec9f43efd07f0 = $(`<div id="html_b0fed50505b93dcf9e9ec9f43efd07f0" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 0<br>Coords: 13.70933, -89.20909</div>`)[0];
+                popup_f69fc35a29c878a086f959e1a997734a.setContent(html_b0fed50505b93dcf9e9ec9f43efd07f0);
+            
+        
+
+        marker_599f9774cfb69bd673fbba7ca5a4d575.bindPopup(popup_f69fc35a29c878a086f959e1a997734a)
+        ;
+
+        
+    
+    
+            marker_599f9774cfb69bd673fbba7ca5a4d575.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_599f9774cfb69bd673fbba7ca5a4d575.setIcon(icon_a68d0f6a72929f30c244d433d8b6a012);
+            
+    
+            var marker_6a8be6c96d3b1725011bf883c73fd6e2 = L.marker(
+                [13.6995371, -89.1515246],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_1d269ba1c4c41b11e694c0093035267b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dcf4571d93f24c660bf839dbf976b7c4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cd906a9690c78df0cb9cf0d69990fd66 = $(`<div id="html_cd906a9690c78df0cb9cf0d69990fd66" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 1<br>Coords: 13.69954, -89.15152</div>`)[0];
+                popup_dcf4571d93f24c660bf839dbf976b7c4.setContent(html_cd906a9690c78df0cb9cf0d69990fd66);
+            
+        
+
+        marker_6a8be6c96d3b1725011bf883c73fd6e2.bindPopup(popup_dcf4571d93f24c660bf839dbf976b7c4)
+        ;
+
+        
+    
+    
+            marker_6a8be6c96d3b1725011bf883c73fd6e2.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a8be6c96d3b1725011bf883c73fd6e2.setIcon(icon_1d269ba1c4c41b11e694c0093035267b);
+            
+    
+            var marker_7f33100e467c00981b3982cbbbd4dc54 = L.marker(
+                [13.7126179, -89.1857512],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_8165b506aefa3a59a819235826983678 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2be50076e24c82aaee3dac1ddfe87487 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8fa0947e7363c23c0f68bfa38f67e916 = $(`<div id="html_8fa0947e7363c23c0f68bfa38f67e916" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 1<br>Coords: 13.71262, -89.18575</div>`)[0];
+                popup_2be50076e24c82aaee3dac1ddfe87487.setContent(html_8fa0947e7363c23c0f68bfa38f67e916);
+            
+        
+
+        marker_7f33100e467c00981b3982cbbbd4dc54.bindPopup(popup_2be50076e24c82aaee3dac1ddfe87487)
+        ;
+
+        
+    
+    
+            marker_7f33100e467c00981b3982cbbbd4dc54.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7f33100e467c00981b3982cbbbd4dc54.setIcon(icon_8165b506aefa3a59a819235826983678);
+            
+    
+            var marker_191dbabfb2f3a97d29315839fecb4971 = L.marker(
+                [13.7156886, -89.1449109],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_b3fbc2499feb8c2cf13069fc1327ceab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8198a6bab66daf5e7ee09af3de93d8f4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5a09f5aca0dcb0050e39d560653dca73 = $(`<div id="html_5a09f5aca0dcb0050e39d560653dca73" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Cluster asignado: 1<br>Coords: 13.71569, -89.14491</div>`)[0];
+                popup_8198a6bab66daf5e7ee09af3de93d8f4.setContent(html_5a09f5aca0dcb0050e39d560653dca73);
+            
+        
+
+        marker_191dbabfb2f3a97d29315839fecb4971.bindPopup(popup_8198a6bab66daf5e7ee09af3de93d8f4)
+        ;
+
+        
+    
+    
+            marker_191dbabfb2f3a97d29315839fecb4971.bindTooltip(
+                `<div>
+                     Wendy's (Cluster 1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_191dbabfb2f3a97d29315839fecb4971.setIcon(icon_b3fbc2499feb8c2cf13069fc1327ceab);
+            
+    
+            var circle_5d4d1ed858f50d6a431cb93b1b0705a6 = L.circle(
+                [13.698312316666666, -89.23025931666666],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.12, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1200, "stroke": true, "weight": 3}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var marker_45d46881bc0d2541d747b9e2ea8baa28 = L.marker(
+                [13.698312316666666, -89.23025931666666],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_85ff4366ebf901ad2c061a19a08602d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b41cd20ff4beb6592470b9b4a15fa859 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_bb3bc84e5e626d9f8774b5914f2a52ee = $(`<div id="html_bb3bc84e5e626d9f8774b5914f2a52ee" style="width: 100.0%; height: 100.0%;"><b>Centroide Polo Comercial - Cluster 0</b><br>Locales en el grupo: 6<br>Coords: 13.69831, -89.23026</div>`)[0];
+                popup_b41cd20ff4beb6592470b9b4a15fa859.setContent(html_bb3bc84e5e626d9f8774b5914f2a52ee);
+            
+        
+
+        marker_45d46881bc0d2541d747b9e2ea8baa28.bindPopup(popup_b41cd20ff4beb6592470b9b4a15fa859)
+        ;
+
+        
+    
+    
+            marker_45d46881bc0d2541d747b9e2ea8baa28.bindTooltip(
+                `<div>
+                     Centroide Cluster 0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45d46881bc0d2541d747b9e2ea8baa28.setIcon(icon_85ff4366ebf901ad2c061a19a08602d3);
+            
+    
+            var circle_c377173eedea939ed7dc4ce43517ae78 = L.circle(
+                [13.70644695, -89.15830545],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.12, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1200, "stroke": true, "weight": 3}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var marker_d1594134c59bc7165bd6202b063538a1 = L.marker(
+                [13.70644695, -89.15830545],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_d740c90c128511767a97d0b4e9fec4e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ceeef78a46cc3b2edbf3c8a8bc9a73f = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_170b13b7c7bb605caee4313cda4f25c4 = $(`<div id="html_170b13b7c7bb605caee4313cda4f25c4" style="width: 100.0%; height: 100.0%;"><b>Centroide Polo Comercial - Cluster 1</b><br>Locales en el grupo: 4<br>Coords: 13.70645, -89.15831</div>`)[0];
+                popup_5ceeef78a46cc3b2edbf3c8a8bc9a73f.setContent(html_170b13b7c7bb605caee4313cda4f25c4);
+            
+        
+
+        marker_d1594134c59bc7165bd6202b063538a1.bindPopup(popup_5ceeef78a46cc3b2edbf3c8a8bc9a73f)
+        ;
+
+        
+    
+    
+            marker_d1594134c59bc7165bd6202b063538a1.bindTooltip(
+                `<div>
+                     Centroide Cluster 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1594134c59bc7165bd6202b063538a1.setIcon(icon_d740c90c128511767a97d0b4e9fec4e0);
+            
+    
+            var circle_ad0cd3dc6b4b23cdada2fc730a71d118 = L.circle(
+                [13.6644246, -89.1844223],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.12, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1200, "stroke": true, "weight": 3}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var marker_2fb223df3bf2f2daf9c6545643f2c2c6 = L.marker(
+                [13.6644246, -89.1844223],
+                {
+}
+            ).addTo(map_ee96305c23fc35bf4fa88f58d12ba046);
+        
+    
+            var icon_96a6cbcea9ccd30817cd1b241c3427cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8d8be64b0d961202ac1d663d97c745f = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_505c8277cf81c847ca96dc6053edc809 = $(`<div id="html_505c8277cf81c847ca96dc6053edc809" style="width: 100.0%; height: 100.0%;"><b>Centroide Polo Comercial - Cluster 2</b><br>Locales en el grupo: 1<br>Coords: 13.66442, -89.18442</div>`)[0];
+                popup_f8d8be64b0d961202ac1d663d97c745f.setContent(html_505c8277cf81c847ca96dc6053edc809);
+            
+        
+
+        marker_2fb223df3bf2f2daf9c6545643f2c2c6.bindPopup(popup_f8d8be64b0d961202ac1d663d97c745f)
+        ;
+
+        
+    
+    
+            marker_2fb223df3bf2f2daf9c6545643f2c2c6.bindTooltip(
+                `<div>
+                     Centroide Cluster 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2fb223df3bf2f2daf9c6545643f2c2c6.setIcon(icon_96a6cbcea9ccd30817cd1b241c3427cf);
+            
+</script>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6d6454276e901530dcbc060c60854d35 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6d6454276e901530dcbc060c60854d35" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6d6454276e901530dcbc060c60854d35 = L.map(
+                "map_6d6454276e901530dcbc060c60854d35",
+                {
+                    center: [13.698189663636363, -89.19992727272728],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8e3dbeb91aadb02134f1c49d69f699e6 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri World Street Map",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8e3dbeb91aadb02134f1c49d69f699e6.addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var marker_6bea27132a4ba0b9791763533d8b9ad0 = L.marker(
+                [13.6890273, -89.2403041],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_61051ca8a8dd331b08f05c5b08b799d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44234f7369b0146e31596d985e237858 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b5f6484cff3175ff773ca6ca248dfc4 = $(`<div id="html_7b5f6484cff3175ff773ca6ca248dfc4" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: No disponible<br>Coords: 13.68903, -89.24030</div>`)[0];
+                popup_44234f7369b0146e31596d985e237858.setContent(html_7b5f6484cff3175ff773ca6ca248dfc4);
+            
+        
+
+        marker_6bea27132a4ba0b9791763533d8b9ad0.bindPopup(popup_44234f7369b0146e31596d985e237858)
+        ;
+
+        
+    
+    
+            marker_6bea27132a4ba0b9791763533d8b9ad0.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6bea27132a4ba0b9791763533d8b9ad0.setIcon(icon_61051ca8a8dd331b08f05c5b08b799d7);
+            
+    
+            var marker_0eb70ba898cd221965f8551b18f52e48 = L.marker(
+                [13.6979442, -89.1510351],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_3feaae17a713b7ddde5397d96c7e8599 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5ca51c574c8d8364d356197450cb2df = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3374f63c2499043b49a188cf45309324 = $(`<div id="html_3374f63c2499043b49a188cf45309324" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: No disponible<br>Coords: 13.69794, -89.15104</div>`)[0];
+                popup_c5ca51c574c8d8364d356197450cb2df.setContent(html_3374f63c2499043b49a188cf45309324);
+            
+        
+
+        marker_0eb70ba898cd221965f8551b18f52e48.bindPopup(popup_c5ca51c574c8d8364d356197450cb2df)
+        ;
+
+        
+    
+    
+            marker_0eb70ba898cd221965f8551b18f52e48.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0eb70ba898cd221965f8551b18f52e48.setIcon(icon_3feaae17a713b7ddde5397d96c7e8599);
+            
+    
+            var marker_a33eafa0e98051db2e4eeb9fb5cd822d = L.marker(
+                [13.6644246, -89.1844223],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_9396e021d91fb19158bcbcdc7e61af94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e6f043fa56b999f93c0eccd9ae01598 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_67124af2030dc33366d59a9848e8f30c = $(`<div id="html_67124af2030dc33366d59a9848e8f30c" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: No disponible<br>Coords: 13.66442, -89.18442</div>`)[0];
+                popup_6e6f043fa56b999f93c0eccd9ae01598.setContent(html_67124af2030dc33366d59a9848e8f30c);
+            
+        
+
+        marker_a33eafa0e98051db2e4eeb9fb5cd822d.bindPopup(popup_6e6f043fa56b999f93c0eccd9ae01598)
+        ;
+
+        
+    
+    
+            marker_a33eafa0e98051db2e4eeb9fb5cd822d.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a33eafa0e98051db2e4eeb9fb5cd822d.setIcon(icon_9396e021d91fb19158bcbcdc7e61af94);
+            
+    
+            var marker_54e4d3a87d413b734b057337145b81f3 = L.marker(
+                [13.7016555, -89.2313751],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_73f6cf4e80159b2c645ae3beaa927c55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daa5ebd9ac8a527a18c0658b438fd58d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5fe070836379ba7b1cbba0573a77373d = $(`<div id="html_5fe070836379ba7b1cbba0573a77373d" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: Paseo General Escalón<br>Coords: 13.70166, -89.23138</div>`)[0];
+                popup_daa5ebd9ac8a527a18c0658b438fd58d.setContent(html_5fe070836379ba7b1cbba0573a77373d);
+            
+        
+
+        marker_54e4d3a87d413b734b057337145b81f3.bindPopup(popup_daa5ebd9ac8a527a18c0658b438fd58d)
+        ;
+
+        
+    
+    
+            marker_54e4d3a87d413b734b057337145b81f3.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54e4d3a87d413b734b057337145b81f3.setIcon(icon_73f6cf4e80159b2c645ae3beaa927c55);
+            
+    
+            var marker_69842ad1261901bff57ba82e443c4cc2 = L.marker(
+                [13.6835158, -89.2304659],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_bb11a85e2f88e8d4f511340e236f816b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a89197d03a6662af85ff781ec9a898c3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e84f6d05ace0339a3ebcde9bfbeb0b61 = $(`<div id="html_e84f6d05ace0339a3ebcde9bfbeb0b61" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: No disponible<br>Coords: 13.68352, -89.23047</div>`)[0];
+                popup_a89197d03a6662af85ff781ec9a898c3.setContent(html_e84f6d05ace0339a3ebcde9bfbeb0b61);
+            
+        
+
+        marker_69842ad1261901bff57ba82e443c4cc2.bindPopup(popup_a89197d03a6662af85ff781ec9a898c3)
+        ;
+
+        
+    
+    
+            marker_69842ad1261901bff57ba82e443c4cc2.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69842ad1261901bff57ba82e443c4cc2.setIcon(icon_bb11a85e2f88e8d4f511340e236f816b);
+            
+    
+            var marker_b685f21011f8d2de1f94834fa389b4fb = L.marker(
+                [13.700693, -89.2214252],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_86bfa5a70ea20c5ce0272f1c5f75115c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35c404dc14dac29f1509866a51bd7681 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_77f876070703a1e635fc93903a27b696 = $(`<div id="html_77f876070703a1e635fc93903a27b696" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: Alameda Franklin Delano Roosevelt<br>Coords: 13.70069, -89.22143</div>`)[0];
+                popup_35c404dc14dac29f1509866a51bd7681.setContent(html_77f876070703a1e635fc93903a27b696);
+            
+        
+
+        marker_b685f21011f8d2de1f94834fa389b4fb.bindPopup(popup_35c404dc14dac29f1509866a51bd7681)
+        ;
+
+        
+    
+    
+            marker_b685f21011f8d2de1f94834fa389b4fb.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b685f21011f8d2de1f94834fa389b4fb.setIcon(icon_86bfa5a70ea20c5ce0272f1c5f75115c);
+            
+    
+            var marker_0aad702337e480f4432fbdaec9ef9d3d = L.marker(
+                [13.7056518, -89.248891],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_6f934f53715996a96cf30bce77ffa637 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d48dd172c14f779387ccfaf9b1f0a24 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ab89650d0cba01d5de0056c446488fa = $(`<div id="html_6ab89650d0cba01d5de0056c446488fa" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: Avenida Masferrer Sur<br>Coords: 13.70565, -89.24889</div>`)[0];
+                popup_8d48dd172c14f779387ccfaf9b1f0a24.setContent(html_6ab89650d0cba01d5de0056c446488fa);
+            
+        
+
+        marker_0aad702337e480f4432fbdaec9ef9d3d.bindPopup(popup_8d48dd172c14f779387ccfaf9b1f0a24)
+        ;
+
+        
+    
+    
+            marker_0aad702337e480f4432fbdaec9ef9d3d.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0aad702337e480f4432fbdaec9ef9d3d.setIcon(icon_6f934f53715996a96cf30bce77ffa637);
+            
+    
+            var marker_e73dceece296d7e849601e74f3c0f548 = L.marker(
+                [13.7093305, -89.2090946],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_2f4edd1b4ddafac95a8a3fce6f2b15f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c08c2b1dd07cdb855976919146e84b9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2d15b3bdd292d6c79d90df96a6bb0158 = $(`<div id="html_2d15b3bdd292d6c79d90df96a6bb0158" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: No disponible<br>Coords: 13.70933, -89.20909</div>`)[0];
+                popup_6c08c2b1dd07cdb855976919146e84b9.setContent(html_2d15b3bdd292d6c79d90df96a6bb0158);
+            
+        
+
+        marker_e73dceece296d7e849601e74f3c0f548.bindPopup(popup_6c08c2b1dd07cdb855976919146e84b9)
+        ;
+
+        
+    
+    
+            marker_e73dceece296d7e849601e74f3c0f548.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e73dceece296d7e849601e74f3c0f548.setIcon(icon_2f4edd1b4ddafac95a8a3fce6f2b15f9);
+            
+    
+            var marker_bf4491c430399728c8d3e8994a348ef9 = L.marker(
+                [13.6995371, -89.1515246],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_4ff58bbc7be702e4421f267aac4f4e95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_902e7422f28f5b15c6374a468a987dbe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_74512af2270c70ed51f94706475dd152 = $(`<div id="html_74512af2270c70ed51f94706475dd152" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: No disponible<br>Coords: 13.69954, -89.15152</div>`)[0];
+                popup_902e7422f28f5b15c6374a468a987dbe.setContent(html_74512af2270c70ed51f94706475dd152);
+            
+        
+
+        marker_bf4491c430399728c8d3e8994a348ef9.bindPopup(popup_902e7422f28f5b15c6374a468a987dbe)
+        ;
+
+        
+    
+    
+            marker_bf4491c430399728c8d3e8994a348ef9.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf4491c430399728c8d3e8994a348ef9.setIcon(icon_4ff58bbc7be702e4421f267aac4f4e95);
+            
+    
+            var marker_6aff4478addd90f52f36f5d8dad7ad09 = L.marker(
+                [13.7126179, -89.1857512],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_53c4d97035b42a7047a30e80236153c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b592a4fa78571f4446d103f08d5462d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_10c4a26c9142cdba53367da6bf5d0b6d = $(`<div id="html_10c4a26c9142cdba53367da6bf5d0b6d" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: 29 Calle Oriente<br>Coords: 13.71262, -89.18575</div>`)[0];
+                popup_3b592a4fa78571f4446d103f08d5462d.setContent(html_10c4a26c9142cdba53367da6bf5d0b6d);
+            
+        
+
+        marker_6aff4478addd90f52f36f5d8dad7ad09.bindPopup(popup_3b592a4fa78571f4446d103f08d5462d)
+        ;
+
+        
+    
+    
+            marker_6aff4478addd90f52f36f5d8dad7ad09.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6aff4478addd90f52f36f5d8dad7ad09.setIcon(icon_53c4d97035b42a7047a30e80236153c8);
+            
+    
+            var marker_e7605705604939b4d94fb6026f12998e = L.marker(
+                [13.7156886, -89.1449109],
+                {
+}
+            ).addTo(map_6d6454276e901530dcbc060c60854d35);
+        
+    
+            var icon_75847205b3ebab9fa051e6aec54834c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db275f5661120106a6f789b36886dd88 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c0c810516cfcd0e6569729df291103be = $(`<div id="html_c0c810516cfcd0e6569729df291103be" style="width: 100.0%; height: 100.0%;"><b>Wendy's</b><br>Tipo: fast_food<br>Direccion: No disponible<br>Coords: 13.71569, -89.14491</div>`)[0];
+                popup_db275f5661120106a6f789b36886dd88.setContent(html_c0c810516cfcd0e6569729df291103be);
+            
+        
+
+        marker_e7605705604939b4d94fb6026f12998e.bindPopup(popup_db275f5661120106a6f789b36886dd88)
+        ;
+
+        
+    
+    
+            marker_e7605705604939b4d94fb6026f12998e.bindTooltip(
+                `<div>
+                     Wendy's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7605705604939b4d94fb6026f12998e.setIcon(icon_75847205b3ebab9fa051e6aec54834c9);
+            
+</script>
+</html>
